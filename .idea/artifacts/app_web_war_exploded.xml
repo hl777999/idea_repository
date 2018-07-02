@@ -1,0 +1,24 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="app-web:war exploded">
+    <output-path>$PROJECT_DIR$/app-web/target/app-web</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="app-web" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="archive" name="app-service-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="app-service" />
+          </element>
+          <element id="archive" name="app-dao-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="app-dao" />
+          </element>
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/app-web/target/app-web/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="app-web/web/Web" />
+    </root>
+  </artifact>
+</component>
